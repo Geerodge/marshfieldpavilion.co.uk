@@ -3,7 +3,7 @@
 }
 
 .nav-link {
-    @apply text-left;
+    @apply text-left uppercase text-base;
 }
 
 .nav-link--active {
