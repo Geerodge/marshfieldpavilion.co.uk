@@ -3,16 +3,34 @@ id: home
 blueprint: pages
 title: Home
 template: default
-updated_by: 6d1af9c0-511e-4aad-94a9-44a14a2422ee
-updated_at: 1638544419
+updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
+updated_at: 1645880566
 block_builder:
   -
-    heading: 'Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.'
+    heading: 'Marshfield Cricket Club'
     type: hero
     enabled: true
-    image: placeholder.jpg
-    textarea: 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.'
+    image: marshfield-cricket-club.jpg
+    textarea: |-
+      To replace the 50-year old pavilion with a facility to match the club 
+      of today and the ambitions of tomorrow.
     background: bg-brand-primary
+    pre-title: 'Pavilion Project'
+    buttons:
+      -
+        button_text: 'Donate now'
+        button_color: button--secondary
+        type: button
+        enabled: true
+        button_url: test
+      -
+        button_text: 'Read more'
+        button_color: button--tertiary
+        type: button
+        enabled: true
+        button_url: test
+    pre_title: 'Pavilion Project'
+    pre: test
   -
     image_side: right
     background: bg-brand-white

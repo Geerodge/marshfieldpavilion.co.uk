@@ -15,6 +15,16 @@ fields:
       instructions_position: above
       max_files: 1
   -
+    handle: pre_title
+    field:
+      input_type: text
+      antlers: false
+      display: Pre-title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
     handle: heading
     field:
       input_type: text
@@ -33,3 +43,5 @@ fields:
       icon: textarea
       listable: hidden
       instructions_position: above
+  -
+    import: buttons

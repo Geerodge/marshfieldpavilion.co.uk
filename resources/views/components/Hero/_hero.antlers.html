@@ -1,20 +1,30 @@
 {{ if template === "default" }}
-    <section class="hero" style="background-image: url( '{{ image }}' );
-background-size: cover;
-background-position: bottom;">
-{{ else }}
-    <section class="hero" style="background-image: url( '{{ image:url }}' );
-background-size: cover;
-background-position: bottom;">
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url( '{{ image }}' );
+    background-size: cover;
+    background-position: bottom;">
+    {{ else }}
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url( '{{ image:url }}' );
+    background-size: cover;
+    background-position: bottom;">
 {{ /if }}
-<div class="hero__text {{ image ? "text-brand-white" : "text-brand-black" }} ">
-    <h1 class="heading-1">
-        {{ heading }}
-    </h1>
-    {{ if textarea }}
-        <p class="p p-base">
-            {{ textarea }}
-        </p>
-    {{ /if }}
-</div>
+    <div class="hero__text {{ image ? "text-brand-white" : "text-brand-black" }} ">
+        <div class="hero__text-container">
+            <p class="p p-base hero__text-pre">
+                {{ pre_title }}
+            </p>
+            <h1 class="heading-1 hero__text-title">
+                {{ heading }}
+            </h1>
+            {{ if textarea }}
+                <p class="p p-base hero__text-description">
+                    {{ textarea }}
+                </p>
+            {{ /if }}
+            {{ buttons }}
+                <a href="{{ button_url }}" class="button small {{ button_color }}">
+                    {{ button_text }}
+                </a>
+            {{ /buttons }}
+        </div>
+    </div>
 </section>

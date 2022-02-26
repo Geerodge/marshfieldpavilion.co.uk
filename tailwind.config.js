@@ -25,11 +25,14 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       brand: {
-        primary: "#1a535c",
-        secondary: "#4ecdc4",
-        white:"#ffffff",
-        black:"#121212",
+        primary: "#A11F26",
+        secondary: "#0D1324",
+        white: "#ffffff",
+        black: "#121212",
         gray: "#EDF1F2",
+        accentBlue: "#1487CC",
+        accentGreen: "#7FB069",
+        accentYellow: "#FECC03",
       },
       black: colors.black,
       white: colors.white,
@@ -196,6 +199,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Montserrat",
         "Brother",
         "system-ui",
         "-apple-system",
@@ -212,6 +216,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
+        "Inter",
         "Hepta Slab",
         "Georgia",
         "Cambria",
