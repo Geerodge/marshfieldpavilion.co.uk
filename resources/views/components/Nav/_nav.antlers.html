@@ -37,7 +37,7 @@
     </div>
     <div class="mobile-nav mobile-navigation-closed js-mobile-navigation">
         <div class="rounded-lg shadow-lg bg-brand-white">
-            <div class="pt-8 pb-10 px-5">
+            <div class="pt-4 pb-10 px-4">
                 <div class="flex items-center justify-between">
                     <div>
                         <a href="/">
@@ -64,9 +64,6 @@
                                 {{ title }}
                             </a>
                         {{ /nav:left_nav }}
-                    </a>
-                    </nav>
-                    <nav class="grid gap-y-8">
                         {{ nav:right_nav }}
                             <a href="{{ url }}"
                                 class="nav-link {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
