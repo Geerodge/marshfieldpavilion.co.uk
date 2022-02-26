@@ -6,3 +6,40 @@
 .hero__text {
     @apply flex flex-col items-center justify-center h-full mx-auto text-center px-4;
 }
+
+.hero__text-pre {
+    @apply font-bold text-xl uppercase;
+}
+
+.hero__text-title {
+    @apply font-bold text-5xl uppercase px-10; 
+}
+
+.hero__text-description {
+    @apply leading-normal py-10;
+}
+
+.button {
+    @apply mr-3 uppercase text-sm;
+}
+
+@screen sm { 
+    .button {
+        @apply mr-5;
+    }
+}
+
+@screen lg { 
+    .hero__text-container {
+        @apply max-w-xl;
+    }
+}
+
+@screen xl { 
+    .hero__text-container {
+        @apply absolute bottom-20 right-20 text-left max-w-lg;
+    }
+    .hero__text-title {
+        @apply p-0;
+    }
+}

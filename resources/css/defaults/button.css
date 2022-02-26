@@ -1,3 +1,16 @@
 .button {
-    @apply px-8 py-4 inline-flex bg-brand-primary text-brand-white transition-colors hover:bg-brand-secondary;
+    @apply px-8 py-4 inline-flex bg-brand-primary text-brand-white transition-colors hover:opacity-90;
+    border-radius: 50px;
+}
+
+.button--primary {
+    @apply bg-brand-primary;
+}
+
+.button--secondary {
+    @apply bg-brand-accentYellow text-brand-secondary;
+}
+
+.button--tertiary { 
+    @apply bg-transparent border-2;
 }

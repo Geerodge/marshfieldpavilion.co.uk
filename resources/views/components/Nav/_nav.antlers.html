@@ -1,22 +1,26 @@
 <div class="relative bg-white">
     <div class="nav-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div class="flex justify-between items-center h-full">
+            <nav class="nav hidden lg:flex lg:items-center">
+                {{ nav:left_nav }}
+                    <a href="{{ url }}"
+                        class="nav-link {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
+                        {{ title }}
+                    </a>
+                {{ /nav:left_nav }}
+            </nav>
             <div class="flex justify-center">
                 <a href="/">
                     <img class="h-20 w-auto" src="/assets/logo.svg" loading="lazy" alt="logo" />
                 </a>
             </div>
             <nav class="nav hidden lg:flex lg:items-center">
-                {{ nav:main_nav }}
+                {{ nav:right_nav }}
                     <a href="{{ url }}"
-                        class="nav-link text-xl {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
+                        class="nav-link {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
                         {{ title }}
                     </a>
-                {{ /nav:main_nav }}
-                <a href="mailto:{{ company_information:email }}"
-                    class="nav-link anchor--secondary text-xl">
-                    {{ company_information:email }}
-                </a>
+                {{ /nav:right_nav }}
             </nav>
             <div class="-mr-2 -my-2 lg:hidden">
                 <button type="button"
@@ -33,7 +37,7 @@
     </div>
     <div class="mobile-nav mobile-navigation-closed js-mobile-navigation">
         <div class="rounded-lg shadow-lg bg-brand-white">
-            <div class="pt-8 pb-10 px-5">
+            <div class="pt-4 pb-10 px-4">
                 <div class="flex items-center justify-between">
                     <div>
                         <a href="/">
@@ -54,16 +58,18 @@
                 </div>
                 <div class="mt-6">
                     <nav class="grid gap-y-8">
-                        {{ nav:main_nav }}
+                        {{ nav:left_nav }}
                             <a href="{{ url }}"
-                                class="nav-link text-base {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
+                                class="nav-link {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
                                 {{ title }}
                             </a>
-                        {{ /nav:main_nav }}
-                        <a href="mailto:{{ company_information:email }}"
-                        class="nav-link anchor--secondary text-base">
-                        {{ company_information:email }}
-                    </a>
+                        {{ /nav:left_nav }}
+                        {{ nav:right_nav }}
+                            <a href="{{ url }}"
+                                class="nav-link {{ is_current || is_parent ?= "nav-link nav-link--active" }}">
+                                {{ title }}
+                            </a>
+                        {{ /nav:right_nav }}
                     </nav>
                 </div>
             </div>
