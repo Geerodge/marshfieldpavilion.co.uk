@@ -40,6 +40,16 @@ fields:
       placeholder: 'Select a background color'
       default: White
   -
+    handle: pre_title
+    field:
+      input_type: text
+      antlers: false
+      display: Pre-title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
     handle: title
     field:
       input_type: text
@@ -50,10 +60,28 @@ fields:
       listable: hidden
       instructions_position: above
   -
-    handle: textarea
+    handle: textarea1
     field:
       antlers: false
-      display: Textarea
+      display: 'Textarea One'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea2
+    field:
+      antlers: false
+      display: 'Textarea Two'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+  -
+    handle: textarea3
+    field:
+      antlers: false
+      display: 'Textarea Three'
       type: textarea
       icon: textarea
       listable: hidden
@@ -67,6 +95,19 @@ fields:
       show_filename: true
       max_files: 1
       display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+  -
+    handle: image_overlayed
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: 'Image (Overlayed)'
       type: assets
       icon: assets
       listable: hidden

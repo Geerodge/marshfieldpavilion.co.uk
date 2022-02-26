@@ -2,23 +2,38 @@
     id={{ anchor }}>
 <div class="image-aside__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
     <div class="image-aside__text py-8 lg:py-12">
-        <h2 class="heading-2 font-sans max-w-xl
+        <p class="p p-base image-aside__pre">
+            {{ pre_title }}
+        </p>
+        <h2 class="heading-2 font-sans max-w-xl image-aside__title
                     {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-primary" }}">
             {{ title }}
         </h2>
-        <p class="p p-base mt-6 mb-12 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
-            {{ textarea }}
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea1 }}
+        </p>
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea2 }}
+        </p>
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea3 }}
         </p>
         <a href="{{ button_url }}"
-            class="btn small {{ button_color:value }}">
+            class="button small {{ button_color:value }}">
             {{ button_text }}
         </a>
     </div>
     <div class="image-aside__image pb-8 px-4 lg:p-0">
         {{ if image }}
-            <img src="{{ glide:image width="675" height="468" }}" loading="lazy"
-                alt="{{ title }}" />
+            <img src="{{ glide:image width="auto" height="auto" }}" loading="lazy"
+                alt="{{ alt }}" />
         {{ /if }}
     </div>
+    {{# <div class="image-aside__image-overlayed pb-8 px-4 lg:p-0">
+        {{ if image }}
+            <img src="{{ glide:image_overlayed width="675" height="468" }}" loading="lazy"
+                alt="{{ alt }}" />
+        {{ /if }}
+    </div> #}}
 </div>
 </section>
