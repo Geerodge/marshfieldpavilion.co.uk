@@ -24,21 +24,28 @@
 }
 
 @screen sm { 
+
     .button {
         @apply mr-5;
     }
 }
 
 @screen lg { 
+
     .hero__text-container {
         @apply max-w-xl;
     }
 }
 
-@screen xl { 
+@screen xl {
+    .hero__text {
+        @apply relative;
+    }
+
     .hero__text-container {
         @apply absolute bottom-20 right-20 text-left max-w-lg;
     }
+
     .hero__text-title {
         @apply p-0;
     }
