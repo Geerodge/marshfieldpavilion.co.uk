@@ -30,6 +30,11 @@ fields:
           fields:
             -
               import: accordion
+        full_width_text:
+          display: 'Full Width Text'
+          fields:
+            -
+              import: full_width_text
       display: 'Block Builder'
       type: replicator
       icon: replicator

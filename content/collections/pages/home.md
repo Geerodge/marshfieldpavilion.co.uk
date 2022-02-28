@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646061480
+updated_at: 1646070690
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -96,37 +96,58 @@ block_builder:
     textarea2: 'Quite simply, Marshfield Cricket Club needs a new pavilion. This is not a vanity project, the current pavilion is over 50 years old and each summer we are thankful it is still standing for another season! This an ambitious project but one needed for a growing and active community cricket club.'
     textarea3: 'Constructed in 1969, the existing pavilion is no longer fit for purpose. The timber structure has no thermal capacity and poor, undersized facilities that  fail to meet the ECB requirements. The new proposals aim to bring the facility up to speed, making it suitable for hosting both the increased quantity and standard of cricket, as well as the growing demand for community events. A legacy, not only for the cricket club but for the village and community as well.'
   -
-    cards:
+    pre_title: 'The Team'
+    title: 'Cricket Club'
+    textarea:
       -
-        title: 'Maecenas sed diam'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        button_color: btn--primary
-        type: new_set
-        enabled: true
-        image: placeholder.jpg
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'On the field there is cricket for all ages and abilities, across the Gloucestershire, Wiltshire & Somerset region.'
       -
-        button_color: btn--primary
-        type: new_set
-        enabled: true
-        title: 'Maecenas sed'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        image: placeholder.jpg
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'We have one of the largest youth cricket sections in the south west with over 200 young people aged between 6 and 18 registered and are proud to be a fully accredited ‘ECB Focus Club’ and be a deliverer of several ECB National Programmes.'
       -
-        title: 'Maecenas sed diam'
-        price: £19.99
-        textarea: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
-        button_text: 'Buy Now'
-        button_url: /
-        button_color: btn--primary
-        type: new_set
-        enabled: true
-        image: placeholder.jpg
-    type: cards
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Our First XI have been successful both regionally and nationally. We have frequently reached the latter stages of the National Village Knockout Cup, whilst we are now playing at our highest ever league standard following promotion to Premier 2 of the West of England cricket league in 2019.'
+    type: full_width_text
     enabled: true
+    bard:
+      -
+        type: paragraph
+        attrs:
+          class: 'p p-base font-sans'
+        content:
+          -
+            type: text
+            text: 'On the field there is cricket for all ages and abilities, across the Gloucestershire, Wiltshire & Somerset region.'
+      -
+        type: paragraph
+        attrs:
+          class: 'p p-base font-sans'
+        content:
+          -
+            type: text
+            text: 'We have one of the largest youth cricket sections in the south west with over 200 young people aged between 6 and 18 registered and are proud to be a fully accredited ‘ECB Focus Club’ and be a deliverer of several ECB National Programmes.'
+      -
+        type: paragraph
+        attrs:
+          class: 'p p-base font-sans'
+        content:
+          -
+            type: text
+            text: 'Our First XI have been successful both regionally and nationally. We have frequently reached the latter stages of the National Village Knockout Cup, whilst we are now playing at our highest ever league standard following promotion to Premier 2 of the West of England cricket league in 2019.'
 ---

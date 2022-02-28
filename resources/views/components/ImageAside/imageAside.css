@@ -1,9 +1,6 @@
-section {
-    padding: 0 !important;
-}
-
 .image-aside {
     @apply mx-auto max-w-screen-max;
+    padding: 0 !important;
 }
 
 .image-aside__container {
