@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89c3b8541932e496f05c80653dd6fbc5",
+    "content-hash": "c6931680c175f735fca3013411bd72b6",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1312,25 +1312,25 @@
         },
         {
             "name": "doublethreedigital/duplicator",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doublethreedigital/duplicator.git",
-                "reference": "efd3d147970c2f2268d29b0d2536afc0ed53a3db"
+                "reference": "6d37bf873b2514cc266d6b458a328cc72ab2b36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublethreedigital/duplicator/zipball/efd3d147970c2f2268d29b0d2536afc0ed53a3db",
-                "reference": "efd3d147970c2f2268d29b0d2536afc0ed53a3db",
+                "url": "https://api.github.com/repos/doublethreedigital/duplicator/zipball/6d37bf873b2514cc266d6b458a328cc72ab2b36b",
+                "reference": "6d37bf873b2514cc266d6b458a328cc72ab2b36b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4 || ^8.0 || ^8.1",
-                "statamic/cms": "3.2.*"
+                "statamic/cms": "3.2.* || 3.3.*"
             },
             "require-dev": {
-                "nunomaduro/collision": "^4.2",
-                "orchestra/testbench": "^5.0"
+                "nunomaduro/collision": "^4.2 || ^5.0 || ^6.1",
+                "orchestra/testbench": "^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -1356,9 +1356,9 @@
             "description": "Duplicate Entries in the Statamic 3 Control Panel",
             "support": {
                 "issues": "https://github.com/doublethreedigital/duplicator/issues",
-                "source": "https://github.com/doublethreedigital/duplicator/tree/v2.1.0"
+                "source": "https://github.com/doublethreedigital/duplicator/tree/v2.1.1"
             },
-            "time": "2021-12-30T15:43:50+00:00"
+            "time": "2022-02-26T13:02:44+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",

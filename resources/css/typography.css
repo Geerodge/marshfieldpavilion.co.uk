@@ -103,11 +103,9 @@ a minimum value, a preferred value, and a maximum allowed value.
 }
 
 .p-base {
-    @apply font-serif;
     font-size: clamp(1rem, 3vw, 1.125rem);
 }
 
 .p-small {
-    @apply font-serif;
     font-size: clamp(0.875rem, 3vw, 1rem);
 }

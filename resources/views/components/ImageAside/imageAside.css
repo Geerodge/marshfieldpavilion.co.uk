@@ -1,53 +1,88 @@
+section {
+    padding: 0 !important;
+}
+
 .image-aside {
     @apply mx-auto max-w-screen-max;
 }
 
 .image-aside__container {
-    @apply max-w-8xl mx-auto;
+    @apply mx-auto;
     & img {
-        @apply w-full object-cover mt-8;
-        min-height: 20rem;
-        max-height: 20rem;
+        @apply w-full object-cover;
+        height: 20rem;
+    }
+}
+
+.image-aside__pre {
+    @apply uppercase text-brand-accentBlue;
+}
+
+.image-aside__title {
+    @apply uppercase text-brand-secondary font-bold !important;
+}
+
+.image-aside__description {
+    @apply py-5;
+}
+
+.image-aside__text {
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
+@screen md {
+
+    .image-aside__image {
+        @apply mb-5;
     }
 }
 
 @screen lg {
+
+    .image-aside__image-container {
+        @apply flex gap-2;
+    }
+    
+    .image-aside__image,
+    .image-aside__image-overlayed {
+        width: 50%;
+    }
+}
+
+@screen xl {
+
     .image-aside__container {
         @apply flex;
 
-        & .image-aside__text {
-            flex: 1 1 45%;
-        }
-
-        & .image-aside__image {
-            @apply flex justify-center items-center;
-            flex: 1 1 47%;
-
             & img {
-                @apply w-full mt-0;
-                min-height: 100%;
-                max-height: 27rem;
+                height: 80%;
             }
-        }
     }
 
-    .image--left {
-        @apply flex-row-reverse;
-
-        & .image-aside__text {
-            margin-left: 5%;
-        }
-        & .image-aside__image {
-            margin-right: 3%;
-        }
+    .image-aside__text {
+        width: 45%;
     }
 
-    .image--right {
-        & .image-aside__text {
-            margin-right: 5%;
-        }
-        & .image-aside__image {
-            margin-left: 3%;
+    .image-aside__image-container {
+        @apply relative gap-0;
+        width: 55%;
+    }
+
+    .image-aside__image,
+    .image-aside__image-overlayed {
+        width: auto;
+    }
+
+    .image-aside__image {
+        @apply ml-10;
+    }
+
+    .image-aside__image-overlayed {
+        @apply absolute bottom-0;
+
+        & img {
+            @apply border-8 border-white;
+            max-width: 460px;
         }
     }
 }
