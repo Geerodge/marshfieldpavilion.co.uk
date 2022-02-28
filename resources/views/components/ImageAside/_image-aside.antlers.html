@@ -23,17 +23,25 @@
             {{ button_text }}
         </a>
     </div>
-    <div class="image-aside__image pb-8 px-4 lg:p-0">
-        {{ if image }}
-            <img src="{{ glide:image width="auto" height="auto" }}" loading="lazy"
-                alt="{{ alt }}" />
-        {{ /if }}
+    <div class="image-aside__image-container">
+        <div class="image-aside__image px-4 lg:p-0">
+            {{ asset:image }}
+                <img 
+                    src="{{ glide:image }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image }}
+        </div>
+        <div class="image-aside__image-overlayed pb-8 px-4 lg:p-0">
+            {{ asset:image_overlayed }}
+                <img 
+                    src="{{ glide:image_overlayed }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image_overlayed }}
+        </div>
     </div>
-    {{# <div class="image-aside__image-overlayed pb-8 px-4 lg:p-0">
-        {{ if image }}
-            <img src="{{ glide:image_overlayed width="675" height="468" }}" loading="lazy"
-                alt="{{ alt }}" />
-        {{ /if }}
-    </div> #}}
 </div>
 </section>

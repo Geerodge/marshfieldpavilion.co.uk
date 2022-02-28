@@ -93,12 +93,12 @@ fields:
       restrict: false
       allow_uploads: true
       show_filename: true
-      max_files: 1
       display: Image
       type: assets
       icon: assets
       listable: hidden
       instructions_position: above
+      max_files: 1
   -
     handle: image_overlayed
     field:
@@ -106,11 +106,11 @@ fields:
       restrict: false
       allow_uploads: true
       show_filename: true
-      max_files: 1
-      display: 'Image (Overlayed)'
+      display: 'Image Overlayed'
       type: assets
       icon: assets
       listable: hidden
       instructions_position: above
+      max_files: 1
   -
     import: button
