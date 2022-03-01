@@ -34,6 +34,18 @@
     }
 }
 
+.image-aside__pre {
+    @apply uppercase text-brand-accentBlue;
+}
+
+.image-aside__title {
+    @apply uppercase text-brand-secondary font-bold !important;
+}
+
+.image-aside__description {
+    @apply py-5;
+}
+
 @screen lg {
 
     .image-aside__image-container {

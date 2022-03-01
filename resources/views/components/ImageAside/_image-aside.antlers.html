@@ -23,6 +23,7 @@
             {{ button_text }}
         </a>
     </div>
+<<<<<<< Updated upstream
     <div class="image-aside__image-container">
         <div class="image-aside__image px-4 lg:p-0">
             {{ asset:image }}
@@ -42,6 +43,19 @@
                 />
             {{ /asset:image_overlayed }}
         </div>
+=======
+    <div class="image-aside__image pb-8 px-4 lg:p-0">
+        {{ if image }}
+            <img src="{{ glide:image width="auto" height="auto" }}" loading="lazy"
+                alt="{{ alt }}" />
+        {{ /if }}
+>>>>>>> Stashed changes
     </div>
+    {{# <div class="image-aside__image-overlayed pb-8 px-4 lg:p-0">
+        {{ if image }}
+            <img src="{{ glide:image_overlayed width="675" height="468" }}" loading="lazy"
+                alt="{{ alt }}" />
+        {{ /if }}
+    </div> #}}
 </div>
 </section>
