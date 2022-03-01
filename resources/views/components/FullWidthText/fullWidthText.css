@@ -1,5 +1,5 @@
 .full-width-text {
-  @apply mx-auto max-w-screen-max text-center my-10;
+  @apply mx-auto max-w-screen-max text-left my-10;
 }
 
 .full-width-text__pre {
@@ -13,5 +13,12 @@
 .full-width-text__content {
   & p {
     @apply mt-4 mb-6 text-brand-black
+  }
+}
+
+@screen xl {
+
+  .full-width-text {
+    @apply max-w-50% text-center;
   }
 }

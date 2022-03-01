@@ -61,7 +61,6 @@ fields:
       instructions_position: above
   -
     handle: textarea1
-<<<<<<< Updated upstream
     field:
       antlers: false
       display: 'Textarea One'
@@ -73,19 +72,6 @@ fields:
     handle: textarea2
     field:
       antlers: false
-=======
-    field:
-      antlers: false
-      display: 'Textarea One'
-      type: textarea
-      icon: textarea
-      listable: hidden
-      instructions_position: above
-  -
-    handle: textarea2
-    field:
-      antlers: false
->>>>>>> Stashed changes
       display: 'Textarea Two'
       type: textarea
       icon: textarea
@@ -127,9 +113,6 @@ fields:
       instructions_position: above
       max_files: 1
   -
-<<<<<<< Updated upstream
-    import: button
-=======
     handle: image_overlayed
     field:
       mode: list
@@ -144,4 +127,3 @@ fields:
       instructions_position: above
   -
     import: button
->>>>>>> Stashed changes
