@@ -1,0 +1,26 @@
+<section class="section image-block">
+  <div class="image-block__carousel-wrapper">
+    <div class="image-block__carousel">
+      {{ image }}
+        <img
+            class="image-block__carousel-photo{{ if first }} initial{{ /if }}"
+            src="{{ glide:url width="auto" height="auto" }}"
+            loading="lazy"
+            alt="{{ alt }}" 
+        />
+      {{ /image }}
+      <div class="image-block__carousel-button--next"></div>
+      <div class="image-block__carousel-button--prev"></div>
+    </div>
+  </div>
+  <div class="image-block__section">
+    {{ image }}
+      <img
+          class="image-block__section-photo{{ if first || count === 4 }}-larger{{ /if }}"
+          src="{{ glide:url width="auto" height="auto" }}"
+          loading="lazy"
+          alt="{{ alt }}" 
+      />
+    {{ /image }}
+  </div>
+</section>

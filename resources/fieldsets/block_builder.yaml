@@ -35,6 +35,11 @@ fields:
           fields:
             -
               import: full_width_text
+        image_block:
+          display: 'Image Block'
+          fields:
+            -
+              import: image_block
       display: 'Block Builder'
       type: replicator
       icon: replicator

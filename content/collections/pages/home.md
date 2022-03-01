@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1645889747
+updated_at: 1646136236
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -150,4 +150,14 @@ block_builder:
           -
             type: text
             text: 'Our First XI have been successful both regionally and nationally. We have frequently reached the latter stages of the National Village Knockout Cup, whilst we are now playing at our highest ever league standard following promotion to Premier 2 of the West of England cricket league in 2019.'
+  -
+    image:
+      - playing-cricket.jpg
+      - girls-cricket-corsham.jpg
+      - mens-cricket.JPG
+      - mens-cricket-costume.jpg
+      - alice-v-corsham-under-13.jpg
+      - cricket-batting.JPG
+    type: image_block
+    enabled: true
 ---
