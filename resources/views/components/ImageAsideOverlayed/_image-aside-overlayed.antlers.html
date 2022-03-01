@@ -1,0 +1,47 @@
+<section id="read-more" class="section image-aside-overlayed {{ background:value }}"
+    id={{ anchor }}>
+<div class="image-aside-overlayed__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
+    <div class="image-aside-overlayed__text py-8 lg:py-12">
+        <p class="p p-base image-aside-overlayed__pre">
+            {{ pre_title }}
+        </p>
+        <h2 class="heading-2 font-sans max-w-xl image-aside-overlayed__title
+                    {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-primary" }}">
+            {{ title }}
+        </h2>
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea_one }}
+        </p>
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea_two }}
+        </p>
+        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ textarea_three }}
+        </p>
+        <a href="{{ button_url }}"
+            class="button small {{ button_color:value }}">
+            {{ button_text }}
+        </a>
+    </div>
+    <div class="image-aside-overlayed__image-container">
+        <div class="image-aside-overlayed__image px-4 lg:p-0">
+            {{ asset:image }}
+                <img 
+                    src="{{ glide:image }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image }}
+        </div>
+        <div class="image-aside-overlayed__image-overlayed pb-8 px-4 lg:p-0">
+            {{ asset:image_overlayed }}
+                <img 
+                    src="{{ glide:image_overlayed }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image_overlayed }}
+        </div>
+    </div>
+</div>
+</section>

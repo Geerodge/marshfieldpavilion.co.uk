@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Mens cricket costume'
 size: 391251
-last_modified: 1646134422
+last_modified: 1646139195
 width: 480
 height: 640
 mime_type: image/jpeg

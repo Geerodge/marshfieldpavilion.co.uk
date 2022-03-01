@@ -15,6 +15,11 @@ fields:
           fields:
             -
               import: image_aside
+        image_aside_overlayed:
+          display: 'Image Aside Overlayed'
+          fields:
+            -
+              import: image_aside_overlayed
         cards:
           display: Cards
           fields:
@@ -40,6 +45,11 @@ fields:
           fields:
             -
               import: image_block
+        image_text_block:
+          display: 'Image Text Block'
+          fields:
+            -
+              import: image_text_block
       display: 'Block Builder'
       type: replicator
       icon: replicator

@@ -1,0 +1,107 @@
+.image-text-block {
+    @apply mx-auto max-w-screen-max;
+}
+
+.image-text-block__container {
+    @apply flex flex-col flex-wrap mx-auto items-center justify-center;
+}
+
+.image-text-block__pre {
+    @apply uppercase text-brand-accentBlue;
+}
+
+.image-text-block__title {
+    @apply uppercase text-brand-secondary font-bold !important;
+}
+
+.image-text-block__description {
+    @apply py-5;
+}
+
+.image-text-block__text {
+    padding: clamp(1rem, 2vw, 3rem);
+    padding-left: 0;
+}
+
+.image-text-block__text-actual {
+
+    & p {
+        @apply my-5;
+    }
+}
+
+.image-text-block__image-two-container {
+
+    & img {
+        @apply my-5;
+        box-shadow: rgba(13, 19, 36) 50px 70px 0 -30px;
+        -webkit-box-shadow: rgba(13, 19, 36) 50px 70px 0 -30px 
+    }
+}
+
+@screen lg {
+
+    .image-text-block__text-one,
+    .image-text-block__text-two  {
+        @apply w-full px-10;
+    }
+
+    .image-text-block__image-one-container,
+    .image-text-block__image-two-container {
+        @apply w-50%;
+
+        & .image-text-block__image {
+            @apply px-10;
+        }
+    }
+    
+    .image-text-block__container {
+        @apply flex-row;
+    }
+    
+    .image-text-block__text,
+    .image-text-block__image-one-container {
+        @apply w-50%;
+    }
+
+    .image-text-block__text {
+        @apply flex flex-col items-start justify-center;
+
+        & p {
+            @apply w-80%;
+        }
+    }
+
+    .image-text-block__image-container {
+        @apply flex items-center justify-center;
+    }
+}
+
+@screen xl {
+
+    .image-text-block__text-one,
+    .image-text-block__text-two,
+    .image-text-block__image-one-container,
+    .image-text-block__image-two-container  {
+        @apply w-50%;
+    }
+
+    .image-text-block__container {
+        @apply relative;
+    }
+
+    .image-text-block__image-two-container {
+
+        & .image-text-block__image {
+            @apply absolute max-w-50%;
+            top: 45%;
+        }
+    }
+}
+
+@screen xl {
+
+    .image-text-block {
+        @apply pt-0;
+    }
+}
