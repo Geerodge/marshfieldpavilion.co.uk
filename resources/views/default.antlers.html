@@ -17,4 +17,7 @@
     {{ if type === "full_width_text" }}
         {{ partial:components/FullWidthText/full-width-text }}
     {{ /if }}
+    {{ if type === "image_block" }}
+        {{ partial:components/ImageBlock/image-block image=image }}
+    {{ /if }}
 {{ /block_builder }}

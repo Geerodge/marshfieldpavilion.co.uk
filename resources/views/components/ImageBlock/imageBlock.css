@@ -1,0 +1,128 @@
+
+/*--------- Mobile carousel ---------*/
+.image-block__section {
+  @apply hidden;
+}
+
+.image-block__carousel {
+  @apply mb-10;
+
+  & img {
+      @apply w-full object-cover;
+      min-height: 20rem;
+      max-height: 20rem;
+  }
+}
+
+.image-block__carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-block__carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.image-block__carousel {
+  transform-style: preserve-3d;
+}
+
+.image-block__carousel-photo {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.image-block__carousel-photo.initial,
+.image-block__carousel-photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.image-block__carousel-photo.prev,
+.image-block__carousel-photo.next {
+  z-index: 800;
+}
+
+.image-block__carousel-photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+
+.image-block__carousel-photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.image-block__carousel-button--prev,
+.image-block__carousel-button--next {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+
+.image-block__carousel-button--prev {
+  left: 0;
+}
+
+.image-block__carousel-button--next {
+  right: 0;
+}
+
+.image-block__carousel-button--prev::after,
+.image-block__carousel-button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.image-block__carousel-button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*--------- Mobile carousel ---------*/
+
+@screen lg {
+  
+  .image-block {
+    @apply p-0;
+  }
+  
+  .image-block__carousel-wrapper {
+    @apply hidden;
+  }
+
+  .image-block__section {
+    @apply flex flex-wrap flex-col items-stretch mx-auto max-w-screen-max;
+    height: 650px;
+  }
+
+  .image-block__section-photo {
+    @apply w-full object-cover;
+    height: 50%;
+    max-width: 16.66666666666667%;
+  }
+
+  .image-block__section-photo-larger {
+    @apply w-full object-cover;
+    height: 100%;
+    max-width: 33.33333333333334%;
+  }
+}

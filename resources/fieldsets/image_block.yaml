@@ -1,0 +1,15 @@
+title: 'Image Block'
+fields:
+  -
+    handle: image
+    field:
+      mode: list
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 6
+      display: Images
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
