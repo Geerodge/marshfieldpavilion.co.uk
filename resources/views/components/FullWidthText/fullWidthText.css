@@ -1,0 +1,24 @@
+.full-width-text {
+  @apply mx-auto max-w-screen-max text-left my-10;
+}
+
+.full-width-text__pre {
+  @apply uppercase text-brand-accentBlue;
+}
+
+.full-width-text__title {
+  @apply uppercase text-brand-secondary font-bold;
+}
+
+.full-width-text__content {
+  & p {
+    @apply mt-4 mb-6 text-brand-black
+  }
+}
+
+@screen xl {
+
+  .full-width-text {
+    @apply max-w-50% text-center;
+  }
+}
