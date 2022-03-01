@@ -3,7 +3,13 @@
         {{ partial:components/Hero/hero image=image }}
     {{ /if }}
     {{ if type === "image_aside" }}
-        {{ partial:components/ImageAside/image-aside image=image image_overlayed=image_overlayed background=background image_side=image_side }}
+        {{ partial:components/ImageAside/image-aside image=image background=background image_side=image_side }}
+    {{ /if }}
+    {{ if type === "image_aside_overlayed" }}
+        {{ partial:components/ImageAsideOverlayed/image-aside-overlayed image=image image_overlayed=image_overlayed background=background image_side=image_side }}
+    {{ /if }}
+    {{ if type === "image_text_block" }}
+        {{ partial:components/ImageTextBlock/image-text-block image_one=image_one image_two=image_two background=background }}
     {{ /if }}
     {{ if type === "cards" }}
         {{ partial:components/Cards/cards }}

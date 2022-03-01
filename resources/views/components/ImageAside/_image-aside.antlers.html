@@ -10,18 +10,8 @@
             {{ title }}
         </h2>
         <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
-            {{ textarea1 }}
+            {{ textarea }}
         </p>
-        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
-            {{ textarea2 }}
-        </p>
-        <p class="p p-base mt-4 mb-6 {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
-            {{ textarea3 }}
-        </p>
-        <a href="{{ button_url }}"
-            class="button small {{ button_color:value }}">
-            {{ button_text }}
-        </a>
     </div>
     <div class="image-aside__image-container">
         <div class="image-aside__image px-4 lg:p-0">
@@ -32,15 +22,6 @@
                     alt="{{ alt }}"
                 />
             {{ /asset:image }}
-        </div>
-        <div class="image-aside__image-overlayed pb-8 px-4 lg:p-0">
-            {{ asset:image_overlayed }}
-                <img 
-                    src="{{ glide:image_overlayed }}"
-                    loading="lazy"
-                    alt="{{ alt }}"
-                />
-            {{ /asset:image_overlayed }}
         </div>
     </div>
 </div>

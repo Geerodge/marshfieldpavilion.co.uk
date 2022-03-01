@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Mens cricket'
 size: 1429876
-last_modified: 1646134700
+last_modified: 1646139195
 width: 4608
 height: 3456
 mime_type: image/jpeg

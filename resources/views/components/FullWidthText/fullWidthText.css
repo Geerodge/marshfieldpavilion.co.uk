@@ -11,6 +11,7 @@
 }
 
 .full-width-text__content {
+
   & p {
     @apply mt-4 mb-6 text-brand-black
   }
@@ -19,6 +20,13 @@
 @screen xl {
 
   .full-width-text {
-    @apply max-w-50% text-center;
+    @apply max-w-80% text-center;
+  }
+}
+
+@screen max {
+
+  .full-width-text {
+    @apply max-w-50%;
   }
 }

@@ -1,0 +1,49 @@
+<section class="section image-text-block {{ background:value }}"
+    id={{ anchor }}>
+<div class="image-text-block__container {{ image_side === "left" ? 'image--left' : 'image--right' }}">
+    <div class="image-text-block__text-one py-8 lg:py-12">
+        <p class="p p-base image-text-block__pre">
+            {{ pre_title }}
+        </p>
+        <h2 class="heading-2 font-sans max-w-xl image-text-block__title
+                    {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-primary" }}">
+            {{ title }}
+        </h2>
+        <div class="p p-base mt-4 mb-6 image-text-block__text-actual {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ bard_one }}
+        </div>
+    </div>
+    <div class="image-text-block__image-one-container">
+        <div class="image-text-block__image px-4 lg:p-0">
+            {{ asset:image_one }}
+                <img
+                    class="image-text-block__image-actual"
+                    src="{{ glide:image_one }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image_one }}
+        </div>
+    </div>
+    <div class="image-text-block__image-two-container">
+        <div class="image-text-block__image px-6 lg:p-0">
+            {{ asset:image_two }}
+                <img
+                    class="image-text-block__image-actual"
+                    src="{{ glide:image_two }}"
+                    loading="lazy"
+                    alt="{{ alt }}"
+                />
+            {{ /asset:image_two }}
+        </div>
+    </div>
+    <div class="image-text-block__text-two py-8 lg:py-12">
+        <div class="p p-base mt-4 mb-6 image-text-block__text-actual {{ background:value === "bg-brand-primary" ? "text-brand-white" : "text-brand-black" }}">
+            {{ bard_two }}
+        </div>
+        <a href="{{ button_url }}" class="button small {{ button_color }}">
+            {{ button_text }}
+        </a>
+    </div>
+</div>
+</section>
