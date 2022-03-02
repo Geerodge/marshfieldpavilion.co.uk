@@ -1,1 +1,19 @@
 title: 'Social Media'
+data:
+  social:
+    -
+      title: Facebook
+      url: 'https://www.facebook.com/MarshfieldCC/'
+      icon: icons/facebook-black.svg
+    -
+      title: Instagram
+      url: 'https://www.instagram.com/mcc1901'
+      icon: icons/instagram-black.svg
+    -
+      title: Twitter
+      url: 'https://twitter.com/Marshfield_CC'
+      icon: icons/twitter-black.svg
+    -
+      title: YouTube
+      url: 'https://www.youtube.com/channel/UCixfTP11TUnefD1EVvbNXqw'
+      icon: icons/youtube-black.svg
