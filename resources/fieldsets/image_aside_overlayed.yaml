@@ -59,30 +59,36 @@ fields:
       listable: hidden
       instructions_position: above
   -
-    handle: textarea_one
+    handle: bard
     field:
+      always_show_set_button: false
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - Paragraph
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
       antlers: false
-      display: 'Textarea One'
-      type: textarea
-      icon: textarea
-      listable: hidden
-      instructions_position: above
-  -
-    handle: textarea_two
-    field:
-      antlers: false
-      display: 'Textarea Two'
-      type: textarea
-      icon: textarea
-      listable: hidden
-      instructions_position: above
-  -
-    handle: textarea_three
-    field:
-      antlers: false
-      display: 'Textarea Three'
-      type: textarea
-      icon: textarea
+      display: Bard
+      type: bard
+      icon: bard
       listable: hidden
       instructions_position: above
   -

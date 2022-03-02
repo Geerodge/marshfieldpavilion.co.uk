@@ -11,6 +11,10 @@
     }
 }
 
+.image-aside-overlayed__content {
+    padding: clamp(1rem, 2vw, 3rem);
+}
+
 .image-aside-overlayed__pre {
     @apply uppercase text-brand-accentBlue;
 }
@@ -24,7 +28,10 @@
 }
 
 .image-aside-overlayed__text {
-    padding: clamp(1rem, 2vw, 3rem);
+
+    & p {
+        @apply my-5;
+    }
 }
 
 @screen md {
@@ -68,7 +75,7 @@
             }
     }
 
-    .image-aside-overlayed__text {
+    .image-aside-overlayed__content {
         width: 45%;
     }
 

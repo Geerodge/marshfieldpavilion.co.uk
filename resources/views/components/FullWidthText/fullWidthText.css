@@ -13,7 +13,7 @@
 .full-width-text__content {
 
   & p {
-    @apply mt-4 mb-6 text-brand-black
+    @apply my-5 text-brand-black
   }
 }
 

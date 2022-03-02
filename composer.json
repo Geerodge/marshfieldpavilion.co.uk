@@ -19,7 +19,7 @@
         "jacksleight/bard-paragraph-style": "^1.2",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "statamic/cms": "3.2.33"
+        "statamic/cms": "3.2.35"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
