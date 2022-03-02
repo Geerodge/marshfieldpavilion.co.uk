@@ -2,7 +2,7 @@ title: 'Company Information'
 data:
   logo:
     - logo.svg
-  name: 'Statamic Template'
+  name: 'Marshfield Pavilion'
   email: example@email.com
   phone_number: '0151 151 151'
   address_line_1: 'Address Line 1'

@@ -16,7 +16,7 @@ fields:
       display: 'Image Side'
       type: select
       icon: select
-      width: 50
+      width: 33
       listable: hidden
       instructions_position: above
   -
@@ -35,7 +35,18 @@ fields:
       display: Background
       type: select
       icon: select
-      width: 50
+      width: 33
+      listable: hidden
+      instructions_position: above
+  -
+    handle: section_id
+    field:
+      input_type: text
+      antlers: false
+      display: 'Section ID'
+      type: text
+      icon: text
+      width: 33
       listable: hidden
       instructions_position: above
   -

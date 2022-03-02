@@ -14,24 +14,31 @@ footer {
     @apply my-3;
 }
 
-.footer__links span {
-    @apply hidden;
+.footer__links-actual {
+    @apply uppercase;
 }
 
+.footer__links-actual:hover {
+    @apply opacity-70;
+}
+
+
 @screen lg {
-    .footer__container {
-        @apply flex-row;
+
+    .footer__logo,
+    .footer__copyright {
+        @apply flex w-full items-center justify-center text-center;
+    }
+
+    .footer__links {
+        @apply flex-wrap w-full;
     }
 
     .footer__links ul {
-        @apply mb-0 flex-row items-start;
+        @apply flex-row flex-wrap justify-evenly;
     }
 
-    .footer__links li {
-        @apply my-0;
-    }
-
-    .footer__links span {
-        @apply block;
+    .footer__nav-link {
+        @apply text-center text-sm;
     }
 }

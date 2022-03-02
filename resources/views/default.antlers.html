@@ -3,33 +3,33 @@
         {{ partial:components/Hero/hero image=image }}
     {{ /if }}
     {{ if type === "image_aside" }}
-        {{ partial:components/ImageAside/image-aside image=image background=background image_side=image_side }}
+        {{ partial:components/ImageAside/image-aside image=image background=background image_side=image_side section_id=section_id }}
     {{ /if }}
     {{ if type === "image_aside_overlayed" }}
-        {{ partial:components/ImageAsideOverlayed/image-aside-overlayed image=image image_overlayed=image_overlayed background=background image_side=image_side }}
+        {{ partial:components/ImageAsideOverlayed/image-aside-overlayed image=image image_overlayed=image_overlayed background=background image_side=image_side section_id=section_id }}
     {{ /if }}
     {{ if type === "image_text_block" }}
-        {{ partial:components/ImageTextBlock/image-text-block image_one=image_one image_two=image_two background=background }}
+        {{ partial:components/ImageTextBlock/image-text-block image_one=image_one image_two=image_two background=background section_id=section_id }}
     {{ /if }}
     {{ if type === "cards" }}
-        {{ partial:components/Cards/cards }}
+        {{ partial:components/Cards/cards section_id=section_id }}
     {{ /if }}
     {{ if type === "bard" }}
-        {{ partial:components/Bard/bard background=background }}
+        {{ partial:components/Bard/bard background=background section_id=section_id }}
     {{ /if }}
     {{ if type === "accordion" }}
-        {{ partial:components/Accordion/accordion }}
+        {{ partial:components/Accordion/accordion section_id=section_id }}
     {{ /if }}
     {{ if type === "full_width_text" }}
-        {{ partial:components/FullWidthText/full-width-text }}
+        {{ partial:components/FullWidthText/full-width-text section_id=section_id }}
     {{ /if }}
     {{ if type === "image_block" }}
-        {{ partial:components/ImageBlock/image-block image=image }}
+        {{ partial:components/ImageBlock/image-block image=image section_id=section_id }}
     {{ /if }}
     {{ if type === "bar" }}
-        {{ partial:components/Bar/bar image=image }}
+        {{ partial:components/Bar/bar image=image section_id=section_id }}
     {{ /if }}
     {{ if type === "donate" }}
-        {{ partial:components/Donate/donate image=image }}
+        {{ partial:components/Donate/donate image=image section_id=section_id }}
     {{ /if }}
 {{ /block_builder }}

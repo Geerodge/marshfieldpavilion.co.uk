@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646235266
+updated_at: 1646237019
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -28,7 +28,7 @@ block_builder:
         button_color: button--tertiary
         type: button
         enabled: true
-        button_url: '#read-more'
+        button_url: '#about'
     pre_title: 'Pavilion Project'
     pre: test
   -
@@ -70,6 +70,7 @@ block_builder:
           -
             type: text
             text: "Constructed in 1969, the existing pavilion is no longer fit for purpose. The timber structure has no thermal capacity and poor, undersized facilities that \_fail to meet the ECB requirements. The new proposals aim to bring the facility up to speed, making it suitable for hosting both the increased quantity and standard of cricket, as well as the growing demand for community events. A legacy, not only for the cricket club but for the village and community as well."
+    section_id: about
   -
     pre_title: 'The Team'
     title: 'Cricket Club'
@@ -125,6 +126,7 @@ block_builder:
           -
             type: text
             text: 'Our First XI have been successful both regionally and nationally. We have frequently reached the latter stages of the National Village Knockout Cup, whilst we are now playing at our highest ever league standard following promotion to Premier 2 of the West of England cricket league in 2019.'
+    section_id: team
   -
     image:
       - playing-cricket.jpg
@@ -181,6 +183,7 @@ block_builder:
     button_text: 'Donate Now'
     button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
     button_color: button--secondary
+    section_id: design
   -
     rounded_image_text:
       -
@@ -239,4 +242,5 @@ block_builder:
         button_color: button--primary
         type: button
         enabled: true
+    section_id: donate
 ---

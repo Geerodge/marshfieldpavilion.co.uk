@@ -1,10 +1,29 @@
 tree:
   -
-    id: 7e9b351b-3bf9-43bb-a6a3-cd9691ce6d16
-    entry: 1d3f949b-2f5d-40f0-a566-281e435390d3
+    id: b0a043e7-4d47-473b-8e37-b6f85dc61670
+    title: Home
+    url: '#home'
   -
-    id: 4ba65608-c2a9-451d-b62e-b9f74afc0baa
-    entry: 1fe0d5a8-09cc-4bb9-a709-e841e961d4ef
+    id: 1c72de6b-1bac-45a9-a1b0-f3d7ae9fe9a9
+    title: 'About the project'
+    url: '#about'
   -
-    id: 332e8d2c-7a52-45ff-8de2-0bddc95c4ee2
-    entry: 2c17fab1-496b-403c-b434-54a185cf7e68
+    id: 15149863-10b1-4ae5-8996-99de4a85b73d
+    title: 'The cricket team'
+    url: '#team'
+  -
+    id: f4fb817d-bf04-45c4-876d-ece2126a980a
+    title: 'Heart of the village'
+    url: '#pavilion'
+  -
+    id: 60aca8a3-ae79-46ec-bfdc-e27911714d9f
+    title: Design
+    url: '#design'
+  -
+    id: f52806de-70a4-4cdb-97df-f62846f7e37d
+    title: Donate
+    url: '#donate'
+  -
+    id: 1f3c6250-be3a-4f53-bf7f-3f8aa2675152
+    title: 'Discover more'
+    url: '#discover'
