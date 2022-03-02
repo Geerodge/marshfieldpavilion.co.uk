@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646145744
+updated_at: 1646151244
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -156,4 +156,27 @@ block_builder:
     button_text: 'Donate Now'
     button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
     button_color: button--secondary
+  -
+    rounded_image_text:
+      -
+        title: 'Phil Fawkner-Corbett'
+        textarea: 'Founder & Director at Tektus Architects'
+        type: rounded_image_text
+        enabled: true
+        image: team/phil-fawkner-corbett.jpeg
+      -
+        image: team/matt-clay.jpeg
+        title: 'Matthew Clay'
+        textarea: 'Founder & Director at Matthew Clay Architects'
+        type: rounded_image_text
+        enabled: true
+      -
+        image: team/matthew-cox.jpeg
+        title: 'Matthew Cox'
+        textarea: 'Architectural Assistant: Stride Treglown Architects'
+        type: rounded_image_text
+        enabled: true
+    type: bar
+    enabled: true
+    title: 'Design Team'
 ---

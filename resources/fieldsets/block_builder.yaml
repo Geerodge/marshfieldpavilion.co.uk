@@ -50,6 +50,11 @@ fields:
           fields:
             -
               import: image_text_block
+        bar:
+          display: Bar
+          fields:
+            -
+              import: bar
       display: 'Block Builder'
       type: replicator
       icon: replicator
