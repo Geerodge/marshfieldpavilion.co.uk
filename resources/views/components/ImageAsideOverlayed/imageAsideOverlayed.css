@@ -56,7 +56,7 @@
 @screen lg {
 
     .image-aside-overlayed__image-container {
-        @apply flex gap-2;
+        @apply inline-block gap-2;
     }
     
     .image-aside-overlayed__image,
