@@ -38,7 +38,7 @@ footer {
     }
 
     .footer__links ul {
-        @apply flex-row flex-wrap justify-evenly;
+        @apply flex-row flex-wrap justify-evenly mb-0;
     }
 
     .footer__nav-link {
