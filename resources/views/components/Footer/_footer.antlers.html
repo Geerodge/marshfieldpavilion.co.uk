@@ -12,9 +12,6 @@
                         />
                     </a>
                 </li>
-                <li class="footer__copyright">
-                    © Copyright <?= date('Y') ?> {{ site_settings:site_name }}. All rights reserved.
-                </li>
                 {{ nav:footer_nav }}
                     <li class="footer__nav-link">
                         <a href="{{ url }}"
@@ -25,6 +22,7 @@
                 {{ /nav:footer_nav  }}
             </ul>
         </div>
+        <p class="p p-base m-5 footer__copyright">© Copyright <?= date('Y') ?> {{ site_settings:site_name }}. All rights reserved.</p>
         {{ partial:components/Social/social-links  }}
         <p class="p p-small text-xs m-5">Website by <a href="https://georgemc.net/">George McEntegart</a></p>
     </div>

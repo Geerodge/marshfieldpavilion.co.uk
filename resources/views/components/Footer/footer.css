@@ -22,11 +22,14 @@ footer {
     @apply opacity-70;
 }
 
+.footer__copyright {
+    @apply text-center;
+}
+
 
 @screen lg {
 
-    .footer__logo,
-    .footer__copyright {
+    .footer__logo {
         @apply flex w-full items-center justify-center text-center;
     }
 
@@ -41,4 +44,17 @@ footer {
     .footer__nav-link {
         @apply text-center text-sm;
     }
+
+    .footer__copyright {
+        @apply text-sm;
+    }
+}
+
+@screen xl {
+
+    .footer__nav-link,
+    .footer__copyright {
+        @apply text-base;
+    }
+
 }
