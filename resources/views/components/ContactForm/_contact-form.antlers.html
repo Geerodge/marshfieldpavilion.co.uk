@@ -1,0 +1,62 @@
+<section id="{{ section_id }}" class="section contact-section">
+    <div class="content-section__container">
+        <div class="contact-section__content">
+            <p class="contact-section__pre">
+                {{ pre_title }}
+            </p>
+            <h2 class="heading-2 contact-section__title">
+                {{ title }}
+            </h2>
+            <div class="contact-section__text">
+                {{ textarea }}
+            </div>
+            <div class="contact-section__download">
+                <a href="{{ pdf }}">
+                    <div class="contact-section__image">
+                        {{ asset:image_one }}
+                            <img
+                                class="contact-section__image-actual" 
+                                src="{{ glide:image_one }}"
+                                alt="{{ alt }}"
+                            />
+                        {{ /asset:image_one }}
+                        {{ asset:image_two }}
+                            <img 
+                                class="contact-section__image-actual-hover" 
+                                src="{{ glide:image_two }}"
+                                alt="{{ alt }}"
+                            />
+                        {{ /asset:image_two }}
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="contact-form">
+            {{ form:contact_us }}
+            <h2 class="contact-form__title heading-3">Send us a message</h2>
+            <p class="contact-form__text p p-base">Fill out the form bellow and ask any questions about the project. We will be glad to answer back.</p>
+                {{ if success }}
+                    <h3 class="text-brand-primaryLight font-sans heading-3 text-center">
+                        {{ success }}
+                    </h3>
+                {{ else }}
+                    {{ fields }}
+                        <div class="py-2 contact-form__field">
+                            <label class="contact-form__label">
+                                {{ display }}
+                            </label>
+                            <div class="py-1">
+                                {{ field }}
+                            </div>
+                        </div>
+                    {{ /fields }}
+                    <input type="text"
+                            class="hidden"
+                            name="{{ honeypot ?? 'honeypot' }}">
+                    <button class="button small button--secondary"
+                            type="submit">Submit</button>
+                {{ /if }}
+            {{ /form:contact_us }}
+        </div>
+    </div>
+</section>

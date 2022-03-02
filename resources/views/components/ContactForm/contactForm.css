@@ -1,0 +1,120 @@
+.contact-section {
+  @apply flex flex-col bg-brand-primary py-14;
+}
+
+.content-section__container {
+  @apply mx-auto max-w-screen-max;
+}
+
+.contact-section__pre {
+  @apply uppercase text-brand-accentYellow;
+}
+
+.contact-section__title {
+  @apply uppercase text-brand-white font-bold;
+}
+
+.contact-section__text {
+  @apply mt-4 mb-6 text-brand-white;
+}
+
+.contact-section__download {
+  @apply my-5;
+}
+
+.contact-section__image {
+  @apply text-center;
+}
+
+.contact-section__image-actual {
+  @apply mx-auto;
+}
+
+.contact-section__image-actual-hover {
+  @apply hidden mx-auto;
+}
+
+.contact-section__image:hover .contact-section__image-actual {
+  @apply hidden;
+}
+
+.contact-section__image:hover .contact-section__image-actual-hover {
+  @apply block;
+}
+
+.contact-form {
+  @apply mt-10 mb-5;
+}
+
+.contact-form__title {
+  @apply uppercase text-brand-white font-bold;
+}
+
+.contact-form__text {
+  @apply mt-4 mb-6 text-brand-white;
+}
+
+.contact-form__label {
+  @apply text-brand-white uppercase font-bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  @apply pl-0 bg-brand-primary !important;
+  border-bottom: 1px solid white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  @apply text-brand-white text-base !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+  @apply text-brand-white text-base !important;
+}
+
+.contact-form button {
+  @apply my-5;
+}
+
+@screen lg {
+  
+  .content-section__container {
+    @apply flex flex-row;
+  }
+
+  .contact-section__content,
+  .contact-form {
+    @apply w-50% px-5;
+  }
+
+  .contact-section__content {
+    @apply px-10;
+  }
+
+  .contact-form form {
+    @apply flex flex-wrap;
+  }
+
+  .contact-form .contact-form__field:nth-child(4) {
+    margin-right: 5%;
+  }
+
+  .contact-form .contact-form__field:nth-child(4),
+  .contact-form .contact-form__field:nth-child(5) {
+    width: 45%;
+  }
+
+  .contact-form .contact-form__field:nth-child(6) {
+    width: 100%;
+  }
+
+  .contact-section__image-actual {
+    @apply mx-0;
+  }
+
+  .contact-section__image-actual-hover {
+    @apply mx-0;
+  }
+}
