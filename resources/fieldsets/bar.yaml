@@ -1,0 +1,27 @@
+title: Bar
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+  -
+    handle: rounded_image_text
+    field:
+      collapse: false
+      sets:
+        rounded_image_text:
+          display: 'Rounded Image Text'
+          fields:
+            -
+              import: rounded_image_text
+      display: 'Rounded Image Text'
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above

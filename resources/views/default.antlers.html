@@ -26,4 +26,7 @@
     {{ if type === "image_block" }}
         {{ partial:components/ImageBlock/image-block image=image }}
     {{ /if }}
+    {{ if type === "bar" }}
+        {{ partial:components/Bar/bar image=image }}
+    {{ /if }}
 {{ /block_builder }}

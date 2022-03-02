@@ -1,0 +1,29 @@
+<section class="section bar">
+  <div class="bar__content">
+    <div class="bar__content-title-container">
+      <h3 class="heading-3 bar__content-title-actual">
+        {{ title }}
+      </h3>
+    </div>
+    {{ rounded_image_text }}
+      <div class="bar__item-container">
+        {{ image }}
+          <div class="bar__image-container">
+            <img
+                class="bar__item-image-actual"
+                src="{{ glide:image }}"
+                loading="lazy"
+                alt="{{ alt }}"
+            />
+          </div>
+        {{ /image }}
+        <h4 class="heading-4 bar__item-title">
+          {{ title }}
+        </h4>
+        <p class="bar__item-text">
+          {{ textarea }}
+        </p>
+      </div>
+    {{ /rounded_image_text }}
+  </div>
+</section>
