@@ -1,5 +1,6 @@
 ---
 id: 972557c8-e9df-4394-9daa-b7f43f38a5dd
+published: false
 blueprint: blog
 title: Blog
 template: articles/index

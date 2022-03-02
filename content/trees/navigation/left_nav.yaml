@@ -1,7 +1,8 @@
 tree:
   -
-    id: 5b252346-1b73-4fd3-9b2f-2eae6f32d259
-    entry: home
+    id: 727f92fd-8c0e-4dc2-b886-d99a60daa3ec
+    title: Home
+    url: '#home'
   -
     id: 2c947be7-3108-46e6-af62-3d17364354d6
     title: 'About The Project'

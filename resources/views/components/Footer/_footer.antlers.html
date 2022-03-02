@@ -1,19 +1,27 @@
-<div class="section max-w-screen-max mx-auto bg-brand-primary text-brand-white p-3 text-center font-sans p-small">
-    {{ partial:components/Carbon/carbon  }}
-</div>
 <footer class="section">
     <div class="footer__container">
         <div class="footer__links">
             <ul class="p p-small">
-                <li>©
-                    {{ site_settings:site_name }} <?= date('Y') ?>
+                <li class="footer__logo">
+                    <a href="/">
+                        <img 
+                            loading="lazy"
+                            class="h-14 w-auto md:h-20 lg:h-28"
+                            src="/assets/logo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                </li>
+                <li class="footer__copyright">
+                    © Copyright <?= date('Y') ?> {{ site_settings:site_name }}. All rights reserved.
                 </li>
                 {{ nav:footer_nav }}
-                    <span class="mx-4">/</span>
-                    <li><a href="{{ url }}"
-                            class="link {{ is_current || is_parent ?= "link--active" }}">
+                    <li class="footer__nav-link">
+                        <a href="{{ url }}"
+                            class="link footer__links-actual {{ is_current || is_parent ?= "link--active" }}">
                             {{ title }}
-                        </a></li>
+                        </a>
+                    </li>
                 {{ /nav:footer_nav  }}
             </ul>
         </div>
