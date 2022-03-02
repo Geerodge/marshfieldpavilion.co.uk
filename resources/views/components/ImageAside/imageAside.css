@@ -18,9 +18,16 @@
     @apply py-5;
 }
 
-.image-aside__text {
+.image-aside__content {
     padding: clamp(1rem, 2vw, 3rem);
     padding-left: 0;
+}
+
+.image-aside__text {
+
+    & p {
+        @apply my-5 text-brand-black
+    }
 }
 
 @screen lg {
@@ -29,12 +36,12 @@
         @apply flex-row;
     }
     
-    .image-aside__text,
+    .image-aside__content,
     .image-aside__image-container {
         @apply w-50%;
     }
 
-    .image-aside__text {
+    .image-aside__content {
         @apply flex flex-col items-start justify-center;
 
         & p {

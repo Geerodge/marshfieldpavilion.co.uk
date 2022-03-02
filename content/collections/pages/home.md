@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646221116
+updated_at: 1646235266
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -204,4 +204,39 @@ block_builder:
     type: bar
     enabled: true
     title: 'Design Team'
+  -
+    image_side: right
+    background: White
+    pre_title: 'Help us build the future'
+    title: 'Donate now'
+    type: image_aside
+    enabled: true
+    bard:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'We are raising funds for facilities to to enhance our community cricket club.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Based in the south Cotswolds just north of Bath, Marshfield Cricket Club is at the heart of the community. Founded in 1901, we provide cricket for all ages and abilities. Our women''s and girls sections is fast growing! We also host a wide range of community social events.'
+    image: alice-v-corsham-under-13.jpg
+    button_text: 'Donate now'
+    button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
+    button_color: button--primary
+    buttons:
+      -
+        button_text: 'Donate now'
+        button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
+        button_color: button--primary
+        type: button
+        enabled: true
 ---

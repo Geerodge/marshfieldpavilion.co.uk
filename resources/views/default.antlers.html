@@ -29,4 +29,7 @@
     {{ if type === "bar" }}
         {{ partial:components/Bar/bar image=image }}
     {{ /if }}
+    {{ if type === "donate" }}
+        {{ partial:components/Donate/donate image=image }}
+    {{ /if }}
 {{ /block_builder }}
