@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Clubhouse Plans'
 size: 1072479
-last_modified: 1646140448
+last_modified: 1646148626
 width: 4094
 height: 3083
 mime_type: image/jpeg

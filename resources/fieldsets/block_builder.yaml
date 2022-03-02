@@ -55,6 +55,11 @@ fields:
           fields:
             -
               import: bar
+        contact_form:
+          display: 'Contact Form'
+          fields:
+            -
+              import: contact_form
       display: 'Block Builder'
       type: replicator
       icon: replicator

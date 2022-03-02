@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646237019
+updated_at: 1646247909
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -243,4 +243,14 @@ block_builder:
         type: button
         enabled: true
     section_id: donate
+  -
+    pre_title: 'Get in touch'
+    title: 'Discover more'
+    textarea: 'Download the full project brochure where you can find more details about the Pavilion project.'
+    type: contact_form
+    enabled: true
+    pdf: documents/marshfield-cricket-club-pavilion-project.pdf
+    section_id: contact
+    image_one: brochure.png
+    image_two: brochure-hover.png
 ---

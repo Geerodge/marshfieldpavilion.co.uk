@@ -1,1 +1,6 @@
 title: 'Contact us'
+email:
+  -
+    to: ben@benwhite.uk.com
+    from: 'Marshfield Pavilion Website'
+    subject: 'New Website Message'
