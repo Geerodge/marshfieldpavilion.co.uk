@@ -4,5 +4,5 @@
 }
 
 .social-links li:hover path {
-    fill: var(--color-brand-primary-light);
+    fill: var(--color-brand-secondary);
 }
