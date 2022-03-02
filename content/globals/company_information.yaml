@@ -3,10 +3,10 @@ data:
   logo:
     - logo.svg
   name: 'Marshfield Pavilion'
-  email: example@email.com
-  phone_number: '0151 151 151'
-  address_line_1: 'Address Line 1'
-  address_line_2: 'Address Line 2'
-  city: City
-  county: County
-  post_code: 'Post Code'
+  email: ben@benwhite.uk.com
+  phone_number: '07974 777037'
+  address_line_1: 'Marshfield Cricket Club'
+  address_line_2: 'Broadleys, Ashwicke Road'
+  city: Marshfield
+  county: 'South Gloucestershire'
+  post_code: 'SN14 8AB'
