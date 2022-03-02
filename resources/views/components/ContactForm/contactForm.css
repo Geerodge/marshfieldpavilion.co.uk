@@ -110,11 +110,15 @@
     width: 100%;
   }
 
-  .contact-section__image-actual {
-    @apply mx-0;
-  }
-
+  .contact-section__image-actual,
   .contact-section__image-actual-hover {
-    @apply mx-0;
+    @apply m-0;
+  }
+}
+
+@screen max {
+
+  .contact-section__download {
+    max-width: 65%;
   }
 }
