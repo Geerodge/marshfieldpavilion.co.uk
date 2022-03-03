@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 template: default
 updated_by: 3bd1f3d1-f089-4ca4-a2f7-76ff9d4b5bf9
-updated_at: 1646270003
+updated_at: 1646331549
 block_builder:
   -
     heading: 'Marshfield Cricket Club'
@@ -22,7 +22,7 @@ block_builder:
         button_color: button--secondary
         type: button
         enabled: true
-        button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
+        button_url: 'https://www.justgiving.com/marshfield-cricketclub'
       -
         button_text: 'Read more'
         button_color: button--tertiary
@@ -69,7 +69,7 @@ block_builder:
         content:
           -
             type: text
-            text: "Constructed in 1969, the existing pavilion is no longer fit for purpose. The timber structure has no thermal capacity and poor, undersized facilities that \_fail to meet the ECB requirements. The new proposals aim to bring the facility up to speed, making it suitable for hosting both the increased quantity and standard of cricket, as well as the growing demand for community events. A legacy, not only for the cricket club but for the village and community as well."
+            text: 'Constructed in 1969, the existing pavilion is no longer fit for purpose. The timber structure has no thermal capacity and poor, undersized facilities that fail to meet the ECB requirements. The new proposals aim to bring the facility up to speed, making it suitable for hosting both the increased quantity and standard of cricket, as well as the growing demand for community events. A legacy, not only for the cricket club but for the village and community as well.'
     section_id: about
   -
     pre_title: 'The Team'
@@ -138,6 +138,46 @@ block_builder:
     type: image_block
     enabled: true
   -
+    pre_title: 'The pavilion'
+    title: 'Heart of the village'
+    bard:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Our positive reputation has spread across the region. This is thanks to a number of factors such as; our thriving youth section with a large number of qualified coaches, our regular social events for both the club and wider community, and our well-known (and much envied) cricket teas.'
+          -
+            type: hard_break
+          -
+            type: hard_break
+          -
+            type: text
+            text: 'Off the field, the club is well structured in terms of committees with very active volunteer involvement. We have a programme of constant improvement of our facilities – practice nets and equipment, grounds equipment and scorebox/ scoreboard. The next phase of this is the biggest and boldest – the regeneration of the pavilion!'
+    buttons:
+      -
+        button_text: 'Donate now'
+        button_url: 'https://www.justgiving.com/marshfield-cricketclub'
+        button_color: button--primary
+        type: button
+        enabled: true
+    type: quote
+    enabled: true
+    quote_text: 'The facility will provide the platform for the continued growth of Marshfield CC as the club strives to provide that welcoming environment for the whole community.'
+    quote_author: 'Peter Sykes'
+    quote_title: 'Wiltshire Cricket Managing Director'
+    quote_author_title: 'Wiltshire Cricket Managing Director'
+    image:
+      - quote/team.png
+      - quote/family.png
+      - quote/community.png
+      - quote/sustainable.png
+      - quote/inclusive.png
+    background_image: icons/quote.png
+    section_id: pavilion
+  -
     background: bg-brand-white
     pre_title: 'The Project'
     type: image_text_block
@@ -181,7 +221,7 @@ block_builder:
             text: 'The club’s importance to the village is widely acknowledged; the existing pavilion has a limited visual link to the village. The proposals do NOT want the new scheme to ‘stand out’ excessively or unnecessarily but the proposals subtly reinforce the link between club and village through orientation'
     image_two: marshfield-cricket-club.jpg
     button_text: 'Donate Now'
-    button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
+    button_url: 'https://www.justgiving.com/marshfield-cricketclub'
     button_color: button--secondary
     section_id: design
   -
@@ -238,7 +278,7 @@ block_builder:
     buttons:
       -
         button_text: 'Donate now'
-        button_url: 'https://www.justgiving.com/onecheckout/donation/direct/charity/795183'
+        button_url: 'https://www.justgiving.com/marshfield-cricketclub'
         button_color: button--primary
         type: button
         enabled: true
@@ -250,7 +290,7 @@ block_builder:
     type: contact_form
     enabled: true
     pdf: documents/marshfield-cricket-club-pavilion-project.pdf
-    section_id: contact
+    section_id: discover
     image_two: brochure-hover.png
     image_one: brochure.png
 ---

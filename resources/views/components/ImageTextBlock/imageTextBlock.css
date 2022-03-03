@@ -41,6 +41,10 @@
 
 @screen lg {
 
+    .image-text-block {
+        @apply p-0;
+    }
+
     .image-text-block__text-one,
     .image-text-block__text-two  {
         @apply w-full px-10;
@@ -51,7 +55,7 @@
         @apply w-50%;
 
         & .image-text-block__image {
-            @apply px-10;
+            @apply pr-10;
         }
     }
     

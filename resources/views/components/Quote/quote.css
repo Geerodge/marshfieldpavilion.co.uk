@@ -1,0 +1,147 @@
+.quote {
+  @apply mx-auto max-w-screen-max bg-brand-secondary text-brand-white;
+}
+
+
+.quote__content {
+  @apply flex flex-col my-10 items-center;
+}
+
+.quote__left {
+  @apply relative order-2 my-10;
+}
+
+.quote__bg-image {
+  @apply absolute z-10 top-0 right-0 w-30%;
+}
+
+.quote__right {
+  @apply order-1;
+}
+
+.quote__text {
+  @apply relative font-bold my-5 z-50 leading-8;
+}
+
+.quote__details-container {
+  @apply flex flex-col items-center;
+}
+
+.quote__author {
+  @apply uppercase text-brand-primary z-50 text-left;
+}
+
+.quote__author-title {
+  @apply text-sm z-50 text-left;
+}
+
+.quote__pre {
+  @apply uppercase text-brand-accentBlue;
+}
+
+.quote__title {
+  @apply uppercase font-bold mb-5;
+}
+
+.quote__button {
+  @apply my-10;
+}
+
+.quote__images {
+  @apply order-3 flex flex-wrap items-center justify-center mt-10;
+}
+
+.quote__image-actual {
+  @apply block w-full object-cover z-0;
+  margin: 2.5%;
+  width: 45%;
+}
+
+@screen md {
+  
+  .quote__details-container {
+    @apply items-start;
+
+    & p {
+      @apply w-50%;
+    }
+  }
+
+  .quote__text {
+    @apply w-70%;
+  }
+}
+
+@screen lg {
+
+  .quote__text {
+    width: 65%;
+  }
+
+  .quote__bg-image {
+    @apply -top-20;
+  }
+
+  .quote__image-actual {
+    width: 25%;
+  }
+
+  .quote__bg-image {
+    @apply w-50%;
+  }
+}
+
+@screen xl {
+
+  .quote__content {
+    @apply flex-row flex-wrap;
+  }
+
+  .quote__left {
+    @apply w-50% order-1;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+
+  .quote__right {
+    @apply w-50% order-2;
+  }
+
+  .quote__images {
+    @apply w-full order-3;
+  }
+
+  .quote__bg-image {
+    @apply top-0 left-10;
+  }
+
+  .quote__text {
+    width: 75%;
+  }
+
+  .quote__details-container {
+    @apply pl-10;
+
+    & p {
+      @apply w-full;
+    }
+  }
+
+  .quote__author {
+    @apply relative;
+  }
+
+  .quote__author:after {
+    content: "";
+    background: white;
+    position: absolute;
+    height: 1px;
+    left: -20%;
+    top: 85%;
+    width: 17%;
+  }
+
+  .quote__image-actual {
+    width: 15%;
+  }
+}

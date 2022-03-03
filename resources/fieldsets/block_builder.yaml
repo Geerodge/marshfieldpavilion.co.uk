@@ -60,6 +60,11 @@ fields:
           fields:
             -
               import: contact_form
+        quote:
+          display: Quote
+          fields:
+            -
+              import: quote
       display: 'Block Builder'
       type: replicator
       icon: replicator

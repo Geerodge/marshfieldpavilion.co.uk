@@ -1,0 +1,49 @@
+<section class="section quote" id="{{ section_id }}">
+  <div class="quote__content">
+    <div class="quote__left">
+      <p class="quote__text">{{ quote_text }}</p>
+      <span class="quote__bg-image">
+        {{ background_image }}
+          <img
+            class="quote__bg-image-actual"
+            src="{{ glide:url width="auto" height="auto" }}"
+            loading="lazy"
+            alt="{{ alt }}" 
+          />
+        {{ /background_image }}
+      </span>
+      <div class="quote__details-container">
+        <p class="quote__author">{{ quote_author }}</p>
+        <p class="quote__author-title">{{ quote_author_title }}</p>
+      </div>
+    </div>
+    <div class="quote__right">
+      <p class="quote__pre">
+        {{ pre_title }}
+      </p>
+      <h2 class="heading-2 quote__title">
+        {{ title }}
+      </h2>
+      <div class="p p-base">
+        {{ bard }}
+      </div>
+      <div class="quote__button">
+        {{ buttons }}
+          <a href="{{ button_url }}" class="button small {{ button_color }}">
+            {{ button_text }}
+          </a>
+        {{ /buttons }}
+      </div>
+    </div>
+    <div class="quote__images">
+      {{ image }}
+        <img
+            class="quote__image-actual"
+            src="{{ glide:url width="auto" height="auto" }}"
+            loading="lazy"
+            alt="{{ alt }}" 
+        />
+      {{ /image }}
+    </div>
+  </div>
+</section>
