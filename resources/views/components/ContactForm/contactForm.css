@@ -23,24 +23,44 @@
 }
 
 .contact-section__image {
-  @apply text-center;
+  @apply relative text-center;
 }
 
 .contact-section__image-actual {
   @apply mx-auto;
 }
 
-.contact-section__image-actual-hover {
-  @apply hidden mx-auto;
+.contact-section__image-actual:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.contact-section__image-actual:hover .contact-section__image-actual-hover {
-  @apply hidden;
+.contact-section__image:after {
+  position: absolute;
+  background-image: url("../../../../public/assets/icons/download.png");
+  background-repeat: no-repeat;
+  content: "";
+  max-width: 72px;
+  max-height: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity .5s;
+  opacity: 0;
 }
 
-.contact-section__image:hover .contact-section__image-actual-hover {
-  @apply block;
+.contact-section__image:hover:after {
+  opacity: 1;
 }
+
+
 
 .contact-form {
   @apply mt-10 mb-5;
@@ -110,8 +130,7 @@
     width: 100%;
   }
 
-  .contact-section__image-actual,
-  .contact-section__image-actual-hover {
+  .contact-section__image-actual {
     @apply m-0;
   }
 }
