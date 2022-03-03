@@ -35,4 +35,7 @@
     {{ if type === "contact_form" }}
         {{ partial:components/ContactForm/contact-form section_id=section_id pdf=pdf image_one=image_one }}
     {{ /if }}
+    {{ if type === "quote" }}
+        {{ partial:components/Quote/quote section_id=section_id image=image background_image=background_image }}
+    {{ /if }}
 {{ /block_builder }}

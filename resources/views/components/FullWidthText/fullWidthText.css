@@ -10,7 +10,7 @@
   @apply uppercase text-brand-secondary font-bold;
 }
 
-.full-width-text__content {
+.full-width-text__text {
 
   & p {
     @apply my-5 text-brand-black
