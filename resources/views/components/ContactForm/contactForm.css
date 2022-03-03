@@ -34,7 +34,7 @@
   @apply hidden mx-auto;
 }
 
-.contact-section__image:hover .contact-section__image-actual {
+.contact-section__image-actual:hover .contact-section__image-actual-hover {
   @apply hidden;
 }
 
