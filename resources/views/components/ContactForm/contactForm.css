@@ -30,6 +30,10 @@
   @apply mx-auto;
 }
 
+.oktest {
+  
+}
+
 .contact-section__image-actual:hover {
   -webkit-filter: brightness(70%);
   -webkit-transition: all .5s ease;
