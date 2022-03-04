@@ -1,5 +1,5 @@
 .full-width-text {
-  @apply mx-auto max-w-screen-max text-left my-10;
+  @apply mx-auto max-w-screen-max text-left mt-10;
 }
 
 .full-width-text__pre {

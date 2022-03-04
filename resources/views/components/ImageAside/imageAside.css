@@ -30,6 +30,14 @@
     }
 }
 
+.image-aside__image {
+    @apply flex flex-col items-center justify-center text-center;
+}
+
+.image-aside__image-caption {
+    @apply mt-10;
+}
+
 @screen lg {
     
     .image-aside__container {
@@ -43,10 +51,6 @@
 
     .image-aside__content {
         @apply flex flex-col items-start justify-center;
-
-        & p {
-            @apply w-80%;
-        }
     }
 
     .image-aside__image-container {

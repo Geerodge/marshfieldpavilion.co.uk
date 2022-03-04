@@ -3,6 +3,10 @@
     height: 87%;
 }
 
+.hero__text-container {
+    max-width: 100vw;
+}
+
 .hero__text {
     @apply flex flex-col items-center justify-center h-full mx-auto text-center px-4;
 }
@@ -12,7 +16,7 @@
 }
 
 .hero__text-title {
-    @apply font-bold text-5xl uppercase px-10; 
+    @apply font-bold text-5xl uppercase; 
 }
 
 .hero__text-description {
@@ -20,10 +24,49 @@
 }
 
 .button {
-    @apply mr-3 uppercase text-sm;
+    @apply uppercase text-sm;
 }
 
-@screen sm { 
+@media (max-width: 320px) {
+    
+    .hero__text-title {
+        font-size: 2rem;
+    }
+
+    .hero__text-container {
+
+        & .button {
+            @apply mb-5;
+        }
+    }
+}
+
+/* iPhone 5 Retina regardless of IOS version */
+@media (device-height : 568px) 
+    and (device-width : 320px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+        .hero__text-title {
+            font-size: 2rem;
+        }
+
+        .hero__text-container {
+
+            & .button {
+                @apply mb-5;
+            }
+        }
+}
+
+@screen sm {
+
+    .hero {
+        height: 87%;
+    }
+
+    .hero__text-container {
+        @apply pt-0;
+    }
 
     .button {
         @apply mr-5;

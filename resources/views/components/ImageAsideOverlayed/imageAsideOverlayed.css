@@ -34,29 +34,23 @@
     }
 }
 
-@screen md {
+.image-aside-overlayed__image-container {
 
-    .image-aside-overlayed__image {
-        @apply mb-5;
+    @apply flex flex-col;
+}
+
+.image-aside-overlayed__image-overlayed {
+        
+    & img {
+        @apply object-bottom;
     }
-}
-
-.image-aside-overlayed__pre {
-    @apply uppercase text-brand-accentBlue;
-}
-
-.image-aside-overlayed__title {
-    @apply uppercase text-brand-secondary font-bold !important;
-}
-
-.image-aside-overlayed__description {
-    @apply py-5;
 }
 
 @screen lg {
 
     .image-aside-overlayed__image-container {
-        @apply inline-block gap-2;
+
+        @apply flex-row;
     }
     
     .image-aside-overlayed__image,

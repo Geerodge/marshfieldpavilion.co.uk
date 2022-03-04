@@ -117,5 +117,17 @@ fields:
       listable: hidden
       instructions_position: above
       max_files: 1
+      width: 50
+  -
+    handle: image_caption
+    field:
+      input_type: text
+      antlers: false
+      display: 'Image Caption'
+      type: text
+      icon: text
+      width: 50
+      listable: hidden
+      instructions_position: above
   -
     import: buttons
