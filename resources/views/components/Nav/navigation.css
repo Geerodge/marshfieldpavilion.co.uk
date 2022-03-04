@@ -23,6 +23,26 @@
     top: -100vh;
 }
 
+
+@screen xs {
+    .tweak {
+        @apply mt-5 -mr-2.5
+    }
+}
+
+@screen sm {
+    .tweak {
+        @apply -mr-0
+    }
+}
+
+@screen md {
+
+    .tweak {
+        @apply mt-0;
+    }
+}
+
 @screen lg {
     .nav-link {
         @apply text-center mx-6;
