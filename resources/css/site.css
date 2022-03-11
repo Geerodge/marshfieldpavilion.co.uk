@@ -7,5 +7,9 @@
 @import "./**/*.css";
 @import "./defaults/*.css";
 @import "../views/components/**/*.css";
-@import "./views/*.css";
+@import "./views/*.css"
 
+
+@layer base {
+  @import "./typography.css"
+}
