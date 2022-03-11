@@ -80,7 +80,7 @@
 
     .image-aside-overlayed__image,
     .image-aside-overlayed__image-overlayed {
-        width: auto;
+        width: 100%;
     }
 
     .image-aside-overlayed__image {
