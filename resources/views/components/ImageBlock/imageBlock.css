@@ -117,7 +117,7 @@
   .image-block__section-photo {
     @apply w-full object-cover;
     height: 50%;
-    max-width: 16.66666666666667%;
+    max-width: 16.67%;
   }
 
   .image-block__section-photo-larger {
