@@ -99,7 +99,7 @@ return [
 
     'glide' => [
         'directory' => 'img',
-        'override' => false,
+        'override' => true,
     ],
 
     /*
