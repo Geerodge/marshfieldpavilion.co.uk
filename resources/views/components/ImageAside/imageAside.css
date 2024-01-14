@@ -46,7 +46,7 @@
     
     .image-aside__content,
     .image-aside__image-container {
-        @apply w-50%;
+        @apply w-50;
     }
 
     .image-aside__content {

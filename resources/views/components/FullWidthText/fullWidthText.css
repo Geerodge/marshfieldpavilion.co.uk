@@ -20,13 +20,13 @@
 @screen xl {
 
   .full-width-text {
-    @apply max-w-80% text-center;
+    @apply max-w-80 text-center;
   }
 }
 
 @screen max {
 
   .full-width-text {
-    @apply max-w-50%;
+    @apply max-w-50;
   }
 }

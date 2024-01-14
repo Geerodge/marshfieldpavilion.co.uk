@@ -52,7 +52,7 @@
 
     .image-text-block__image-one-container,
     .image-text-block__image-two-container {
-        @apply w-50%;
+        @apply w-50;
 
         & .image-text-block__image {
             @apply pr-10;
@@ -65,14 +65,14 @@
     
     .image-text-block__text,
     .image-text-block__image-one-container {
-        @apply w-50%;
+        @apply w-50;
     }
 
     .image-text-block__text {
         @apply flex flex-col items-start justify-center;
 
         & p {
-            @apply w-80%;
+            @apply w-80;
         }
     }
 
@@ -87,7 +87,7 @@
     .image-text-block__text-two,
     .image-text-block__image-one-container,
     .image-text-block__image-two-container  {
-        @apply w-50%;
+        @apply w-50;
     }
 
     .image-text-block__container {
@@ -97,7 +97,7 @@
     .image-text-block__image-two-container {
 
         & .image-text-block__image {
-            @apply absolute max-w-50%;
+            @apply absolute max-w-50;
             top: 45%;
         }
     }

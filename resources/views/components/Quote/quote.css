@@ -12,7 +12,7 @@
 }
 
 .quote__bg-image {
-  @apply absolute z-10 top-0 right-0 w-30%;
+  @apply absolute z-10 top-0 right-0 w-30;
 }
 
 .quote__right {
@@ -63,12 +63,12 @@
     @apply items-start;
 
     & p {
-      @apply w-50%;
+      @apply w-50;
     }
   }
 
   .quote__text {
-    @apply w-70%;
+    @apply w-70;
   }
 }
 
@@ -87,7 +87,7 @@
   }
 
   .quote__bg-image {
-    @apply w-50%;
+    @apply w-50;
   }
 }
 
@@ -98,13 +98,13 @@
   }
 
   .quote__left {
-    @apply w-50% order-1;
+    @apply w-50 order-1;
     padding-left: 10%;
     padding-top: 10%;
   }
 
   .quote__right {
-    @apply w-50% order-2;
+    @apply w-50 order-2;
   }
 
   .quote__images {

@@ -2,15 +2,13 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: 'jit',
-  purge: {
     content: [
       './resources/**/*.antlers.html',
       './resources/**/*.blade.php',
       './content/**/*.md'
-    ]
-  },
+    ],
   presets: [],
-  darkMode: false, // or 'class' or 'media'
+  media: false, // or 'class' or 'media'
   theme: {
     screens: {
       xs: "480px",
@@ -36,7 +34,7 @@ module.exports = {
       },
       black: colors.black,
       white: colors.white,
-      gray: colors.coolGray,
+      gray: colors.gray,
       red: colors.red,
       yellow: colors.amber,
       green: colors.emerald,
@@ -81,15 +79,15 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
-      "10%": "10%",
-      "20%": "20%",
-      "30%": "30%",
-      "40%": "40%",
-      "50%": "50%",
-      "60%": "60%",
-      "70%": "70%",
-      "80%": "80%",
-      "90%": "90%",
+      "10": "10%",
+      "20": "20%",
+      "30": "30%",
+      "40": "40%",
+      "50": "50%",
+      "60": "60%",
+      "70": "70%",
+      "80": "80%",
+      "90": "90%",
     },
     animation: {
       none: "none",
@@ -499,15 +497,15 @@ module.exports = {
       "6xl": "72rem",
       "7xl": "80rem",
       "8xl": "88rem",
-      "10%": "10%",
-      "20%": "20%",
-      "30%": "30%",
-      "40%": "40%",
-      "50%": "50%",
-      "60%": "60%",
-      "70%": "70%",
-      "80%": "80%",
-      "90%": "90%",
+      "10": "10%",
+      "20": "20%",
+      "30": "30%",
+      "40": "40%",
+      "50": "50%",
+      "60": "60%",
+      "70": "70%",
+      "80": "80%",
+      "90": "90%",
       full: "100%",
       min: "min-content",
       max: "max-content",
@@ -955,6 +953,9 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require("tailwind-css-variables")(
@@ -965,5 +966,7 @@ module.exports = {
         // options
       }
     ),
+    
+    require('@tailwindcss/aspect-ratio'),
   ],
 };

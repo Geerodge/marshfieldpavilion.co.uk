@@ -23,11 +23,11 @@
 }
 
 .bar__item-image-actual {
-  @apply rounded-full max-w-90%;
+  @apply rounded-full max-w-90;
 }
 
 .bar__item-text {
-  @apply mt-0 mb-6 text-brand-black opacity-80 w-90%;
+  @apply mt-0 mb-6 text-brand-black opacity-80 w-90;
 }
 
 @screen lg {

@@ -1,15 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "./tailwind.css";
 @import "../../node_modules/luminous-lightbox/dist/luminous-basic.css";
-
-/* Import all other CSS files */
 @import "./**/*.css";
 @import "./defaults/*.css";
 @import "../views/components/**/*.css";
-@import "./views/*.css"
-
-
-@layer base {
-  @import "./typography.css"
-}
+@import "./views/*.css";
+@import "./typography.css";

@@ -19,7 +19,8 @@
         "jacksleight/bard-paragraph-style": "^1.2",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "statamic/cms": "3.2.35"
+        "statamic/cms": "3.3.0",
+        "statamic/ssg": "^1.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
@@ -32,7 +33,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
     },
     "extra": {
         "laravel": {

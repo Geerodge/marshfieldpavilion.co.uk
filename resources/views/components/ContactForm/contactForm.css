@@ -104,7 +104,7 @@
 
   .contact-section__content,
   .contact-form {
-    @apply w-50% px-5;
+    @apply w-50 px-5;
   }
 
   .contact-section__content {
