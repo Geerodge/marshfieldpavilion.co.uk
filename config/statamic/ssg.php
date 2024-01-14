@@ -39,9 +39,9 @@ return [
     */
 
     'copy' => [
-        public_path('dist') => 'dist',
-        public_path('dist/css') => 'dist/css',
-        public_path('dist/js') => 'dist/js',
+        public_path('vendor') => 'vendor',
+        public_path('css') => 'css',
+        public_path('js') => 'js',
         public_path('assets') => 'assets',
         public_path('robots.txt') => 'robots.txt',
         public_path('favicon.ico') => 'favicon.ico',
