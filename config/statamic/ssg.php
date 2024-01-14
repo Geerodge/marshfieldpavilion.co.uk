@@ -49,11 +49,6 @@ return [
         public_path('sw.js') => 'sw.js',
     ],
 
-    'copy' => [
-        public_path('css') => 'css',
-        public_path('js') => 'js',
-    ],
-
     'symlinks' => [
         // public_path('css') => 'css',
         // public_path('js') => 'js',
