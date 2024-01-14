@@ -19,8 +19,7 @@
     "watch": "parcel watch ./resources/js/site.js ./resources/css/site.css --no-cache --public-url ./",
     "format": "prettier --loglevel warn --write \"resources/**/*.{js,css,md}\"",
     "serve": "php artisan serve",
-    "dev": "concurrently npm:watch npm:serve",
-    "prepare": "husky install"
+    "dev": "concurrently npm:watch npm:serve"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
